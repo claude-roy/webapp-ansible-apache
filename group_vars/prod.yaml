@@ -1,0 +1,4 @@
+# prod.yaml
+all:
+  ansible_user: deploy
+  ansible_password: S0l&il
