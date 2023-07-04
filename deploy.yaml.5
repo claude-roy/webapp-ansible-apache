@@ -2,6 +2,9 @@
 ---
 - name: "Apache installation avec Docker"
   hosts: prod
+  become: true
+  vars_files:
+    - ./vars/secret-variables.yaml
   pre_tasks:
     - name: Install Docker
       apt:

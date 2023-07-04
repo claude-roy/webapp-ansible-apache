@@ -1,0 +1,240 @@
+2023-01-18 21:57:37,214 p=13171 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 21:57:37,219 p=13171 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 21:57:38,491 p=13171 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 21:57:38,496 p=13171 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************************
+2023-01-18 21:57:51,250 p=13171 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-01-18 21:57:51,260 p=13171 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************************
+2023-01-18 21:57:55,625 p=13171 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-01-18 21:57:55,635 p=13171 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 21:57:55,635 p=13171 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-18 22:04:33,606 p=13235 u=deploy n=ansiblelint | Guessed /home/deploy/webapp as project root directory
+2023-01-18 22:04:34,064 p=13235 u=deploy n=ansiblelint.utils | Overriding detected file kind 'yaml' with 'playbook' for given positional argument: deploy.yaml
+2023-01-18 22:04:34,308 p=13247 u=deploy n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2023-01-18 22:04:34,308 p=13247 u=deploy n=ansible | playbook: deploy.yaml
+2023-01-18 22:05:02,574 p=13252 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 22:05:02,587 p=13252 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 22:05:03,640 p=13252 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 22:05:03,650 p=13252 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************************
+2023-01-18 22:05:04,045 p=13252 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"changed": false, "msg": "Error connecting: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))"}
+2023-01-18 22:05:04,046 p=13252 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 22:05:04,046 p=13252 u=deploy n=ansible | srv-apache-prof            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-18 22:09:54,751 p=13289 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 22:09:54,757 p=13289 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 22:09:55,802 p=13289 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 22:09:55,807 p=13289 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************************
+2023-01-18 22:10:56,247 p=13289 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"changed": false, "msg": "Failed to lock apt for exclusive operation: Failed to lock directory /var/lib/apt/lists/: E:Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)"}
+2023-01-18 22:10:56,248 p=13289 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 22:10:56,248 p=13289 u=deploy n=ansible | srv-apache-prof            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-18 22:11:28,952 p=13323 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 22:11:28,957 p=13323 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 22:11:29,187 p=13323 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "Missing sudo password"}
+2023-01-18 22:11:29,188 p=13323 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 22:11:29,188 p=13323 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-18 22:12:19,655 p=13346 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 22:12:19,660 p=13346 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 22:12:20,518 p=13346 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 22:12:20,523 p=13346 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************************
+2023-01-18 22:12:33,592 p=13346 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-01-18 22:12:33,603 p=13346 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************************
+2023-01-18 22:12:37,838 p=13346 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-01-18 22:12:37,848 p=13346 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 22:12:37,848 p=13346 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-18 22:17:06,075 p=14006 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 22:17:06,080 p=14006 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 22:17:06,652 p=14006 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "Missing sudo password"}
+2023-01-18 22:17:06,653 p=14006 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 22:17:06,653 p=14006 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-18 22:19:30,903 p=14038 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 22:19:30,908 p=14038 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 22:19:32,046 p=14038 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 22:19:32,052 p=14038 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************************
+2023-01-18 22:19:33,568 p=14038 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 22:19:33,578 p=14038 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************************
+2023-01-18 22:19:33,971 p=14038 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 22:19:33,982 p=14038 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 22:19:33,982 p=14038 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-18 22:54:47,926 p=14132 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 22:54:47,937 p=14132 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 22:54:50,199 p=14132 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "Incorrect sudo password"}
+2023-01-18 22:54:50,199 p=14132 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 22:54:50,199 p=14132 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-01-18 22:55:24,732 p=14160 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 22:55:24,743 p=14160 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 22:55:25,581 p=14160 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 22:55:25,592 p=14160 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************************
+2023-01-18 22:55:27,320 p=14160 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 22:55:27,342 p=14160 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************************
+2023-01-18 22:55:27,720 p=14160 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 22:55:27,742 p=14160 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 22:55:27,743 p=14160 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-01-18 23:11:22,399 p=14216 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************************
+2023-01-18 23:11:22,410 p=14216 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************************
+2023-01-18 23:11:23,628 p=14216 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-01-18 23:11:23,640 p=14216 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************************
+2023-01-18 23:11:37,744 p=14216 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-01-18 23:11:37,766 p=14216 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************************
+2023-01-18 23:11:42,315 p=14216 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-01-18 23:11:42,336 p=14216 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************************
+2023-01-18 23:11:42,337 p=14216 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-02-10 16:43:51,094 p=3685 u=deploy n=ansiblelint | Guessed /home/deploy/webapp as project root directory
+2023-02-10 16:43:51,671 p=3685 u=deploy n=ansiblelint.utils | Overriding detected file kind 'yaml' with 'playbook' for given positional argument: deploy.yaml
+2023-02-10 16:43:52,033 p=3699 u=deploy n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2023-02-10 16:43:52,034 p=3699 u=deploy n=ansible | playbook: deploy.yaml
+2023-02-10 16:43:52,152 p=3685 u=deploy n=ansiblelint | Listing 1 violation(s) that are fatal
+2023-02-10 16:45:30,410 p=3710 u=deploy n=ansiblelint | Guessed /home/deploy/webapp as project root directory
+2023-02-10 16:45:30,918 p=3710 u=deploy n=ansiblelint.utils | Overriding detected file kind 'yaml' with 'playbook' for given positional argument: deploy.yaml
+2023-02-10 16:45:31,199 p=3722 u=deploy n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2023-02-10 16:45:31,199 p=3722 u=deploy n=ansible | playbook: deploy.yaml
+2023-02-10 16:49:48,840 p=3727 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 16:49:48,887 p=3727 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 16:49:49,999 p=3727 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 16:49:50,010 p=3727 u=deploy n=ansible | TASK [Create Apache container] ***********************************************************************************
+2023-02-10 16:49:50,390 p=3727 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"changed": false, "msg": "Error connecting: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))"}
+2023-02-10 16:49:50,391 p=3727 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 16:49:50,391 p=3727 u=deploy n=ansible | srv-apache-prof            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 17:01:07,197 p=3768 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 17:01:07,203 p=3768 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 17:01:08,177 p=3768 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 17:01:08,182 p=3768 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************
+2023-02-10 17:02:08,492 p=3768 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"changed": false, "msg": "Failed to lock apt for exclusive operation: Failed to lock directory /var/lib/apt/lists/: E:Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)"}
+2023-02-10 17:02:08,493 p=3768 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 17:02:08,493 p=3768 u=deploy n=ansible | srv-apache-prof            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 17:22:58,692 p=3849 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 17:22:58,697 p=3849 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 17:22:59,233 p=3849 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "Missing sudo password"}
+2023-02-10 17:22:59,233 p=3849 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 17:22:59,234 p=3849 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 17:23:42,861 p=3873 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 17:23:42,866 p=3873 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 17:23:43,697 p=3873 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 17:23:43,702 p=3873 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************
+2023-02-10 17:24:02,212 p=3873 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-02-10 17:24:02,223 p=3873 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************
+2023-02-10 17:24:06,340 p=3873 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-02-10 17:24:06,350 p=3873 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 17:24:06,350 p=3873 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-02-10 18:29:54,602 p=4911 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 18:29:54,607 p=4911 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 18:29:55,149 p=4911 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "Missing sudo password"}
+2023-02-10 18:29:55,150 p=4911 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 18:29:55,150 p=4911 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 18:30:25,801 p=4941 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 18:30:25,807 p=4941 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 18:30:26,023 p=4941 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "Missing sudo password"}
+2023-02-10 18:30:26,024 p=4941 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 18:30:26,024 p=4941 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 18:32:35,553 p=4960 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 18:32:35,559 p=4960 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 18:32:35,576 p=4960 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords or pkcs11_provider, you must install the sshpass program"}
+2023-02-10 18:32:35,576 p=4960 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 18:32:35,577 p=4960 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 18:36:28,396 p=4994 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 18:36:28,402 p=4994 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 18:36:28,416 p=4994 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords or pkcs11_provider, you must install the sshpass program"}
+2023-02-10 18:36:28,417 p=4994 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 18:36:28,417 p=4994 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 18:44:28,019 p=5028 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 18:44:28,024 p=5028 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 18:44:28,039 p=5028 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords or pkcs11_provider, you must install the sshpass program"}
+2023-02-10 18:44:28,039 p=5028 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 18:44:28,039 p=5028 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 18:48:23,023 p=5707 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 18:48:23,029 p=5707 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 18:48:23,563 p=5707 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "Missing sudo password"}
+2023-02-10 18:48:23,563 p=5707 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 18:48:23,564 p=5707 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 18:50:31,318 p=5980 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 18:50:31,324 p=5980 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 18:50:31,339 p=5980 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "to use the 'ssh' connection type with passwords or pkcs11_provider, you must install the sshpass program"}
+2023-02-10 18:50:31,340 p=5980 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 18:50:31,340 p=5980 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-10 18:50:52,941 p=5990 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 18:50:52,947 p=5990 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 18:50:54,088 p=5990 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 18:50:54,094 p=5990 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************
+2023-02-10 18:50:57,887 p=5990 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 18:50:57,897 p=5990 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************
+2023-02-10 18:50:58,298 p=5990 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 18:50:58,308 p=5990 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 18:50:58,309 p=5990 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-02-10 18:57:46,489 p=6039 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 18:57:46,495 p=6039 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 18:57:47,701 p=6039 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 18:57:47,707 p=6039 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************
+2023-02-10 18:57:49,183 p=6039 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 18:57:49,194 p=6039 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************
+2023-02-10 18:57:49,590 p=6039 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 18:57:49,600 p=6039 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 18:57:49,600 p=6039 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-02-10 19:01:47,682 p=6279 u=deploy n=ansible | PLAY [Apache installation avec Docker] ***************************************************************************
+2023-02-10 19:01:47,694 p=6279 u=deploy n=ansible | TASK [Gathering Facts] *******************************************************************************************
+2023-02-10 19:01:48,839 p=6279 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 19:01:48,851 p=6279 u=deploy n=ansible | TASK [Install Docker] ********************************************************************************************
+2023-02-10 19:01:50,303 p=6279 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 19:01:50,327 p=6279 u=deploy n=ansible | TASK [Creation container Apache] *********************************************************************************
+2023-02-10 19:01:50,721 p=6279 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-10 19:01:50,745 p=6279 u=deploy n=ansible | PLAY RECAP *******************************************************************************************************
+2023-02-10 19:01:50,745 p=6279 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-02-17 08:50:07,984 p=5680 u=deploy n=ansiblelint | Guessed /home/deploy/webapp as project root directory
+2023-02-17 08:50:08,574 p=5680 u=deploy n=ansiblelint.utils | Overriding detected file kind 'yaml' with 'playbook' for given positional argument: deploy.yaml
+2023-02-17 08:50:08,920 p=5695 u=deploy n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: prod
+
+2023-02-17 08:50:08,920 p=5695 u=deploy n=ansible | playbook: deploy.yaml
+2023-02-17 08:51:44,883 p=5704 u=deploy n=ansible | PLAY [Apache installation avec Docker] ************************************************************************************************************************************
+2023-02-17 08:51:44,943 p=5704 u=deploy n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************************
+2023-02-17 08:51:46,053 p=5704 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 08:51:46,066 p=5704 u=deploy n=ansible | TASK [Create Apache container] ********************************************************************************************************************************************
+2023-02-17 08:51:46,469 p=5704 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"changed": false, "msg": "Error connecting: Error while fetching server API version: ('Connection aborted.', FileNotFoundError(2, 'No such file or directory'))"}
+2023-02-17 08:51:46,470 p=5704 u=deploy n=ansible | PLAY RECAP ****************************************************************************************************************************************************************
+2023-02-17 08:51:46,470 p=5704 u=deploy n=ansible | srv-apache-prof            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-17 08:54:22,961 p=5748 u=deploy n=ansible | PLAY [Apache installation avec Docker] ************************************************************************************************************************************
+2023-02-17 08:54:22,967 p=5748 u=deploy n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************************
+2023-02-17 08:54:23,984 p=5748 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 08:54:23,990 p=5748 u=deploy n=ansible | TASK [Install Docker] *****************************************************************************************************************************************************
+2023-02-17 08:55:24,332 p=5748 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"changed": false, "msg": "Failed to lock apt for exclusive operation: Failed to lock directory /var/lib/apt/lists/: E:Could not open lock file /var/lib/apt/lists/lock - open (13: Permission denied)"}
+2023-02-17 08:55:24,333 p=5748 u=deploy n=ansible | PLAY RECAP ****************************************************************************************************************************************************************
+2023-02-17 08:55:24,333 p=5748 u=deploy n=ansible | srv-apache-prof            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-17 08:56:51,551 p=5786 u=deploy n=ansible | PLAY [Apache installation avec Docker] ************************************************************************************************************************************
+2023-02-17 08:56:51,557 p=5786 u=deploy n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************************
+2023-02-17 08:56:52,116 p=5786 u=deploy n=ansible | fatal: [srv-apache-prof]: FAILED! => {"msg": "Missing sudo password"}
+2023-02-17 08:56:52,117 p=5786 u=deploy n=ansible | PLAY RECAP ****************************************************************************************************************************************************************
+2023-02-17 08:56:52,117 p=5786 u=deploy n=ansible | srv-apache-prof            : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-17 08:58:07,957 p=5810 u=deploy n=ansible | PLAY [Apache installation avec Docker] ************************************************************************************************************************************
+2023-02-17 08:58:07,963 p=5810 u=deploy n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************************
+2023-02-17 08:58:09,170 p=5810 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 08:58:09,175 p=5810 u=deploy n=ansible | TASK [Install Docker] *****************************************************************************************************************************************************
+2023-02-17 08:58:56,875 p=5810 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-02-17 08:58:56,885 p=5810 u=deploy n=ansible | TASK [Creation container Apache] ******************************************************************************************************************************************
+2023-02-17 08:59:23,419 p=5810 u=deploy n=ansible | changed: [srv-apache-prof]
+2023-02-17 08:59:23,429 p=5810 u=deploy n=ansible | PLAY RECAP ****************************************************************************************************************************************************************
+2023-02-17 08:59:23,430 p=5810 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-02-17 09:03:53,436 p=6654 u=deploy n=ansible | PLAY [Apache installation avec Docker] ************************************************************************************************************************************
+2023-02-17 09:03:53,442 p=6654 u=deploy n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************************
+2023-02-17 09:03:54,638 p=6654 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 09:03:54,645 p=6654 u=deploy n=ansible | TASK [Install Docker] *****************************************************************************************************************************************************
+2023-02-17 09:04:33,465 p=6654 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 09:04:33,476 p=6654 u=deploy n=ansible | TASK [Creation container Apache] ******************************************************************************************************************************************
+2023-02-17 09:04:33,908 p=6654 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 09:04:33,919 p=6654 u=deploy n=ansible | PLAY RECAP ****************************************************************************************************************************************************************
+2023-02-17 09:04:33,919 p=6654 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-02-17 09:06:18,512 p=6711 u=deploy n=ansible | PLAY [Apache installation avec Docker] ************************************************************************************************************************************
+2023-02-17 09:06:18,519 p=6711 u=deploy n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************************
+2023-02-17 09:06:19,733 p=6711 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 09:06:19,739 p=6711 u=deploy n=ansible | TASK [Install Docker] *****************************************************************************************************************************************************
+2023-02-17 09:06:21,380 p=6711 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 09:06:21,391 p=6711 u=deploy n=ansible | TASK [Creation container Apache] ******************************************************************************************************************************************
+2023-02-17 09:06:21,803 p=6711 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 09:06:21,816 p=6711 u=deploy n=ansible | PLAY RECAP ****************************************************************************************************************************************************************
+2023-02-17 09:06:21,816 p=6711 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-02-17 09:12:12,652 p=6793 u=deploy n=ansible | PLAY [Apache installation avec Docker] ************************************************************************************************************************************
+2023-02-17 09:12:12,664 p=6793 u=deploy n=ansible | TASK [Gathering Facts] ****************************************************************************************************************************************************
+2023-02-17 09:12:13,854 p=6793 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 09:12:13,867 p=6793 u=deploy n=ansible | TASK [Install Docker] *****************************************************************************************************************************************************
+2023-02-17 09:14:50,449 p=6793 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 09:14:50,473 p=6793 u=deploy n=ansible | TASK [Creation container Apache] ******************************************************************************************************************************************
+2023-02-17 09:14:50,912 p=6793 u=deploy n=ansible | ok: [srv-apache-prof]
+2023-02-17 09:14:50,935 p=6793 u=deploy n=ansible | PLAY RECAP ****************************************************************************************************************************************************************
+2023-02-17 09:14:50,935 p=6793 u=deploy n=ansible | srv-apache-prof            : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

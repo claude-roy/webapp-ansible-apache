@@ -1,16 +1,9 @@
 # deploy.yaml
----
+# ---
 - name: "Apache installation avec Docker"
   hosts: prod
-  pre_tasks:
-    - name: Install Docker
-      apt:
-        name: docker.io
-        state: present
-        update_cache: yes
-
   tasks:
-    - name: Creation container Apache
+    - name: Create Apache container
       community.docker.docker_container:
         name: webapp
         image: httpd

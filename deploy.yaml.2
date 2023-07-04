@@ -2,13 +2,13 @@
 ---
 - name: "Apache installation avec Docker"
   hosts: prod
+  become: true
   pre_tasks:
     - name: Install Docker
       apt:
         name: docker.io
         state: present
         update_cache: yes
-
   tasks:
     - name: Creation container Apache
       community.docker.docker_container:
